@@ -1,0 +1,446 @@
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    body{
+    background-image: url(../IMAGENES/EL\ GARCI.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .header {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    }
+
+    .nav {
+    display: flex;
+    /*background-color: blue;*/
+    padding: 1rem;
+    font-size: 25px;
+    justify-content: space-evenly;
+    
+    }
+
+    .nav__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*gap: 50px;*/
+    }  
+
+    .nav__item{
+        margin-left: 30px;
+        display: inline-block;
+        }
+
+    .nav__enlace{
+    color:white;
+    text-decoration: none;
+    font-family:'Arenq';
+    font-size: 30px; 
+    }
+
+    @font-face {
+    font-family:'Arenq';
+    src: url(../FUENTE/Arenq.otf);
+    }
+
+    .logotipo{
+    color: white;
+    font-family: 'Arenq';
+    justify-content: end;
+    font-size: 50px;
+    }
+
+.redes__enlaces{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arenq';
+    font-size: 25px;
+    
+    justify-content: space-between;
+    
+}
+
+.ColorDeLasRedes{
+    color: white;
+    font-size: 30px;
+    font-family: 'Arenq';
+}
+.redes__socialestitulo{
+    background-color: black;
+}
+
+.seccion1{
+    background-image: url(../IMAGENES/WAYNESTOCK\ FONDO.jpg);
+    background-size: cover;
+    background-color:lightcoral;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1__subtitulo{
+    font-size: 180px;
+
+}
+
+.grid{
+    color: black;
+    border: 6px solid black;
+    padding: 1rem;
+    min-height: 500px;
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px 100px;
+    grid-template-rows: 25% 25% 100px;
+    grid-template-rows: 1fr 2fr 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+
+    grid-template-areas: 
+    "ele1 ele2 ele2"
+    "ele3 ele3 ele4"
+    "ele5 ele6 ele4";
+}
+    .grid__hijo{
+        border: 2px solid black;
+        padding: 0rem;
+        color:black;
+        text-align: center;
+        position: relative;
+    }
+
+    .grid__hijo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .grid__hijo--1{
+    background-color: lightblue;
+    grid-area: ele1;
+    color: black;
+    }
+
+    .grid__hijo--2{
+    background-color:lightcoral ;
+    grid-area: ele2;
+    color: black;
+    }  
+
+    .grid__hijo--3{
+    background-color: red;
+    grid-area: ele3;
+    color: black;
+    }
+
+        .grid__hijo--4{
+        background-color: lightsalmon;
+        grid-area: ele4;
+        color: black;
+        }
+
+        .grid__hijo--5{
+        background-color: lightslategray;
+        grid-area: ele5;
+        color: black;
+        }
+
+        .grid__hijo--6{
+        background-color: lightpink;
+        grid-area: ele6;
+        color: black;
+        }
+
+        .grid__texto{
+        position: absolute;
+        bottom:0;
+        right:0;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1rem;
+        }
+    .seccion{
+        width: 80%;
+        margin:0 auto;
+    }
+
+    .flex {
+        border: 2px solid black;
+        padding: 1rem;
+        min-height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        color: white;
+        }
+        .flex img{
+            width: 180px;
+            height: 180px;
+        }
+    
+    .flex__hijo {
+        border: 1px solid black;
+        ;
+        color: #fff;
+        text-align: center;
+        line-height: 80px;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .flex__hijo--1 {
+        color: white;
+    }
+    .flex__hijo--2 {
+        color: white;
+    }
+    .flex__hijo--3 {
+        color: white;
+    }
+    .flex__hijo--4 {
+        color: white;}
+
+    .main__top{
+    background-image: url(../IMAGENES/la\ banda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+    .clase__main{
+        width:100%;
+        height: auto;
+        background-color: green;
+        background-image: url(../IMAGENES/instrumentos-de-la-banda-de-rock-18172472.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .form-register{
+        color: white;
+        background-color: black;
+        width: 400px;
+        padding: 30px;
+        margin:auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+        box-shadow: 10px 13px 37px #000;
+ 
+    }
+    .form-register h4{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+    .controls{
+        width: 100%;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border:1px solid black;
+        font-size: 18px;
+    }
+
+    .form-register p{
+        height: 40px;
+        text-align:center;
+        font-size: 10px;
+        color: white;  
+        line-height: 5px;
+    }
+
+    .form-register a{
+        color:white;
+        text-decoration: none;
+    }
+
+    .form-register a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+
+    .form-register .botons{
+        width: 20rem;
+        border:none;
+        background-color: lightblue;
+        padding: 5px;
+        color: white;
+        margin:10px 0px;
+        font-size: 12px;
+    }
+
+    .YaTengoCuenta{
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1023px){
+        
+        section.seccion1{
+            text-align: center;
+            margin-right:10px;
+
+        }
+        .seccion1__subtitulo{ font-size: 80px;
+            text-align: center;
+            margin-right:10px;
+        }
+
+        .header{ 
+            background-color: red;
+            flex-direction: column;
+            padding: 1rem;
+            
+    }
+    .nav{background-color: black;
+        flex-direction: column;
+
+    }
+        
+    }
+
+
+    @media screen and (max-width: 600px){
+            .seccion1{
+                height: 100vh;
+                text-align: center;
+                margin-right:10px;
+                display: flex;
+                flex-direction:row;
+    
+            }
+            .seccion1__subtitulo{ font-size: 50px;
+                text-align: center;
+                
+            }
+    
+            .header{ 
+                background-color: red;}
+        .nav{background-color: black;
+            display: flex;
+            flex-direction: column;
+            padding: 2px;
+        }
+        .nav__lista{text-align: center;
+            padding: 1px;
+        }
+        .nav__enlace{
+            font-size: 10px;
+            text-align: center;}
+
+        .logotipo{
+            font-size: 25px;
+        }
+        .nav__item{
+            margin: 0px;
+        }
+        .redes__enlaces{
+            margin:1rem;
+            text-align: center;
+        }
+        .redes__socialestitulo{
+            text-align: center;
+        }
+        .flex{
+            justify-content: center;
+            background-color: black;
+            gap:2rem;
+            text-align:center;
+            
+        
+        }
+        .flex__hijo{
+            background-color:white;
+        }
+
+        .redes__socialestitulo{
+            font-size: 2rem;
+            margin-top: 0;
+        
+
+        }
+        .lateral{
+            display: block;
+            background-color: yellow;
+        }
+
+        .fa-solid .fa-guitar-electric{
+            color: black;
+        }
+
+        .form-register{
+            width: 220px;
+            height: 500px;
+            margin-bottom:1rem;
+        }
+        .controls{
+            width: 220px;
+            height: 15px;
+            display: flex;
+            font-size: 10px;
+        }
+
+        .form-register h4{
+            font-size: 10px;
+        }
+
+        .botons{
+            font-size: 1px;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: red;
+            color: red;
+        }
+        
+        .redes__socialestitulo{
+            font-size: 15px;
+        }
+
+        .ColorDeLasRedes{
+            font-size: 10px;
+        }
+
+        .texto__acuerdo{
+        font-size: 10px;
+        
+        }
+
+        .redes__enlaces{
+            font-size: 10px;
+            width: 300px;
+            height: 5px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .TerminosYCondiciones{
+        font-size: 10px;
+        }
+
+        }
+
+    
+
+
