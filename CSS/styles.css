@@ -44,7 +44,11 @@
     color:white;
     text-decoration: none;
     font-family:'Arenq';
-    font-size: 30px; 
+    font-size: 25px; 
+    }
+
+    .nav__lista{
+        font-size: 30px;
     }
 
     @font-face {
@@ -196,55 +200,53 @@
         }
     
     .flex__hijo {
-        border: 1px solid black;
-        ;
-        color: #fff;
-        text-align: center;
-        line-height: 80px;
-        padding: 10px;
-        width: 200px;
-        height: 200px;
+    border: 1px solid black;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
     }
     
     .flex__hijo--1 {
-        color: white;
+    color: white;
     }
     .flex__hijo--2 {
-        color: white;
+    color: white;
     }
     .flex__hijo--3 {
-        color: white;
+    color: white;
     }
     .flex__hijo--4 {
-        color: white;}
+    color: white;}
 
     .main__top{
     background-image: url(../IMAGENES/la\ banda.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     }
     .clase__main{
-        width:100%;
-        height: auto;
-        background-color: green;
-        background-image: url(../IMAGENES/instrumentos-de-la-banda-de-rock-18172472.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    width:100%;
+    height: auto;
+    background-color: green;
+    background-image: url(../IMAGENES/instrumentos-de-la-banda-de-rock-18172472.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
     .form-register{
-        color: white;
-        background-color: black;
-        width: 400px;
-        padding: 30px;
-        margin:auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        border-radius: 10px;
-        box-shadow: 10px 13px 37px #000;
- 
+    color: white;
+    background-color: black;
+    width: 400px;
+    padding: 30px;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 10px 13px 37px #000;
     }
+
     .form-register h4{
     color:white;
     font-size: 25px;
@@ -253,46 +255,62 @@
     }
 
     .controls{
-        width: 100%;
-        background-color: white;
-        padding: 5px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        border:1px solid black;
-        font-size: 18px;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border:1px solid black;
+    font-size: 18px;
     }
 
     .form-register p{
-        height: 40px;
-        text-align:center;
-        font-size: 10px;
-        color: white;  
-        line-height: 5px;
+    height: 40px;
+    text-align:center;
+    font-size: 10px;
+    color: white;  
+    line-height: 5px;
     }
 
     .form-register a{
-        color:white;
-        text-decoration: none;
+    color:white;
+    text-decoration: none;
     }
 
     .form-register a:hover{
-        color: black;
-        text-decoration: underline;
+    color: black;
+    text-decoration: underline;
     }
 
     .form-register .botons{
-        width: 20rem;
-        border:none;
-        background-color: lightblue;
-        padding: 5px;
-        color: white;
-        margin:10px 0px;
-        font-size: 12px;
+    width: 20rem;
+    border:none;
+    background-color: lightblue;
+    padding: 5px;
+    color: white;
+    margin:10px 0px;
+    font-size: 12px;
     }
 
     .YaTengoCuenta{
-        font-size: 20px;
+    font-size: 20px;
     }
+
+    .texto__acuerdo{
+    font-size: 10px;
+    }
+
+    .formulario--contacto{
+    height: 700px;
+    width: 800px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    }
+
+
+
 
     @media screen and (max-width: 1023px){
         
@@ -346,7 +364,13 @@
         }
         .nav__enlace{
             font-size: 10px;
-            text-align: center;}
+            text-align: center;    
+        }
+
+        .form-register h4{
+            font-size: 300px;
+        }
+
 
         .logotipo{
             font-size: 25px;
@@ -358,6 +382,7 @@
             margin:1rem;
             text-align: center;
         }
+
         .redes__socialestitulo{
             text-align: center;
         }
@@ -389,29 +414,33 @@
         }
 
         .form-register{
-            width: 220px;
-            height: 500px;
+            width: 250px;
+            height: 400px;
             margin-bottom:1rem;
+            text-align: center;
+            align-content: center;
         }
         .controls{
-            width: 220px;
+            width: 200px;
             height: 15px;
             display: flex;
             font-size: 10px;
+            align-content: space-around;
+            align-items: center;
         }
 
         .form-register h4{
             font-size: 10px;
         }
 
-        .botons{
-            font-size: 1px;
-            width: 100%;
-            height: 100%;
+        .form-register .botons{
+            font-size: 5px;
+            width:160px;
+            height: 20px;
             padding: 0;
-            margin: 0;
+            margin-top: 2rem;
             background-color: red;
-            color: red;
+            color: white;
         }
         
         .redes__socialestitulo{
@@ -423,7 +452,7 @@
         }
 
         .texto__acuerdo{
-        font-size: 10px;
+        font-size: 500px;
         
         }
 
@@ -437,6 +466,12 @@
 
         .TerminosYCondiciones{
         font-size: 10px;
+        font-family:'Arenq';
+        }
+
+        .YaTengoCuenta{
+        font-size: 10px;
+        
         }
 
         }
