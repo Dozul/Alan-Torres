@@ -301,13 +301,23 @@
     }
 
     .formulario--contacto{
-    height: 700px;
-    width: 800px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    height: auto;
+    width: auto;
+    
     }
+
+    .footer__text{
+        text-decoration: none;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 
 
 
@@ -471,7 +481,19 @@
 
         .YaTengoCuenta{
         font-size: 10px;
-        
+        }
+
+        .grid__texto{
+            font-size: 12px;
+        }
+
+        .tamaño__formulario{
+            height: 30px;
+            width: 300px;
+        }
+    
+        .titulo__texto{
+            text-align:center;
         }
 
         }
