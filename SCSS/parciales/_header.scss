@@ -1,0 +1,52 @@
+.header {
+    background-color: $color-primario;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    }
+
+    .nav {
+        display: flex;
+        /*background-color: blue;*/
+        padding: 1rem;
+        font-size: 25px;
+        justify-content: space-evenly;
+
+        &__lista {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /*gap: 50px;*/
+            }  
+        
+            &__item{
+                margin-left: 30px;
+                display: inline-block;
+                }
+        
+            &__enlace{
+            color:$color-secundario;
+            text-decoration: none;
+            font-family:'Arenq';
+            font-size: 25px; 
+            }
+        
+            &__lista{
+                font-size: 30px;
+            }
+        
+        }
+
+        @font-face {
+            font-family:'Arenq';
+            src: url(../FUENTE/Arenq.otf);
+            }
+            .logotipo{
+                color: white;
+                font-family: 'Arenq';
+                justify-content: end;
+                font-size: 50px;
+                }        

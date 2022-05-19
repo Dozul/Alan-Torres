@@ -1,0 +1,423 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/IMAGENES/ELGARCI.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  /*background-color: blue;*/
+  padding: 1rem;
+  font-size: 25px;
+  justify-content: space-evenly;
+}
+
+.nav__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*gap: 50px;*/
+}
+
+.nav__item {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.nav__enlace {
+  color: white;
+  text-decoration: none;
+  font-family: 'Arenq';
+  font-size: 25px;
+}
+
+.nav__lista {
+  font-size: 30px;
+}
+
+.seccion1__subtitulo {
+  font-size: 180px;
+}
+
+.seccion {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.seccion1 {
+  background-image: url(../IMAGENES/WAYNESTOCKFONDO.jpg);
+  background-size: cover;
+  background-color: lightcoral;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes__enlaces {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Arenq';
+  font-size: 25px;
+  justify-content: space-between;
+}
+
+.ColorDeLasRedes {
+  color: white;
+  font-size: 30px;
+  font-family: 'Arenq';
+}
+
+.redes__socialestitulo {
+  background-color: black;
+}
+
+.grid {
+  color: black;
+  border: 6px solid black;
+  padding: 1rem;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 200px 100px;
+  grid-template-rows: 25% 25% 100px;
+  grid-template-rows: 1fr 2fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: "ele1 ele2 ele2" "ele3 ele3 ele4" "ele5 ele6 ele4";
+}
+
+.grid__hijo {
+  border: 2px solid black;
+  padding: 0rem;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.grid__hijo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid__hijo--1 {
+  background-color: lightblue;
+  grid-area: ele1;
+  color: black;
+}
+
+.grid__hijo--2 {
+  background-color: lightcoral;
+  grid-area: ele2;
+  color: black;
+}
+
+.grid__hijo--3 {
+  background-color: red;
+  grid-area: ele3;
+  color: black;
+}
+
+.grid__hijo--4 {
+  background-color: lightsalmon;
+  grid-area: ele4;
+  color: black;
+}
+
+.grid__hijo--5 {
+  background-color: lightslategray;
+  grid-area: ele5;
+  color: black;
+}
+
+.grid__hijo--6 {
+  background-color: lightpink;
+  grid-area: ele6;
+  color: black;
+}
+
+.grid__texto {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  section.seccion1 {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .seccion1__subtitulo {
+    font-size: 80px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .header {
+    background-color: red;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav {
+    background-color: black;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .seccion1 {
+    height: 100vh;
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .seccion1__subtitulo {
+    font-size: 50px;
+    text-align: center;
+  }
+  .header {
+    background-color: red;
+  }
+  .nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+  }
+  .nav__lista {
+    text-align: center;
+    padding: 1px;
+  }
+  .nav__enlace {
+    font-size: 10px;
+    text-align: center;
+  }
+  .form-register h4 {
+    font-size: 300px;
+  }
+  .logotipo {
+    font-size: 25px;
+  }
+  .nav__item {
+    margin: 0px;
+  }
+  .redes__enlaces {
+    margin: 1rem;
+    text-align: center;
+  }
+  .redes__socialestitulo {
+    text-align: center;
+  }
+  .flex {
+    justify-content: center;
+    background-color: black;
+    gap: 2rem;
+    text-align: center;
+  }
+  .flex__hijo {
+    background-color: white;
+  }
+  .redes__socialestitulo {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .lateral {
+    display: block;
+    background-color: yellow;
+  }
+  .fa-solid .fa-guitar-electric {
+    color: black;
+  }
+  .form-register {
+    width: 250px;
+    height: 400px;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-content: center;
+  }
+  .controls {
+    width: 200px;
+    height: 15px;
+    display: flex;
+    font-size: 10px;
+    align-content: space-around;
+    align-items: center;
+  }
+  .form-register h4 {
+    font-size: 10px;
+  }
+  .form-register .botons {
+    font-size: 5px;
+    width: 160px;
+    height: 20px;
+    padding: 0;
+    margin-top: 2rem;
+    background-color: red;
+    color: white;
+  }
+  .redes__socialestitulo {
+    font-size: 15px;
+  }
+  .ColorDeLasRedes {
+    font-size: 10px;
+  }
+  .texto__acuerdo {
+    font-size: 500px;
+  }
+  .redes__enlaces {
+    font-size: 10px;
+    width: 300px;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+  }
+  .TerminosYCondiciones {
+    font-size: 10px;
+    font-family: 'Arenq';
+  }
+  .YaTengoCuenta {
+    font-size: 10px;
+  }
+  .grid__texto {
+    font-size: 12px;
+  }
+  .tamaño__formulario {
+    height: 30px;
+    width: 300px;
+  }
+  .titulo__texto {
+    text-align: center;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-container .video {
+  height: 15rem;
+  width: 25rem;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.video-container .video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-container .video video:hover {
+  transition: .2s linear;
+  transform: scale(1.3rem);
+}
+
+.video-container .video .active {
+  position: fixed;
+  top: 50;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+}
+
+.main__top {
+  background-image: url(../IMAGENES/labanda.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clase__main {
+  width: 100%;
+  height: auto;
+  background-color: green;
+  background-image: url(../IMAGENES/instrumentos-de-la-banda-de-rock-18172472.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  /*background-color: blue;*/
+  padding: 1rem;
+  font-size: 25px;
+  justify-content: space-evenly;
+}
+
+.nav__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*gap: 50px;*/
+}
+
+.nav__item {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.nav__enlace {
+  color: white;
+  text-decoration: none;
+  font-family: 'Arenq';
+  font-size: 25px;
+}
+
+.nav__lista {
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: 'Arenq';
+  src: url(../FUENTE/Arenq.otf);
+}
+
+.logotipo {
+  color: white;
+  font-family: 'Arenq';
+  justify-content: end;
+  font-size: 50px;
+}
+/*# sourceMappingURL=estilos.css.map */
