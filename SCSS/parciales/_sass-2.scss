@@ -1,0 +1,32 @@
+@each $color  in (blue , yellow , black) {
+    .btn #{$color}{ 
+        background-color:#{$color};
+    }
+}
+
+$redes:(
+    twitter: lightblue,
+    facebook:blue,
+    instagram:violet,
+);
+
+@each $clave, $valor in $redes {
+    .btn {
+        background-color: $valor;
+    }
+}
+
+$estilos:(
+    color:lightblue,
+    centro:center,
+    tFuente:35px,
+    1rem:1rem,
+);
+
+div{
+    background-color: map-get($estilos,color);
+    text-align: map-get($estilos,centro);
+    padding: map-get($estilos, padding);
+    font-size:map-get($estilos,tFuente);
+
+}
