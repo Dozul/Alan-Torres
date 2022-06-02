@@ -30,3 +30,10 @@ div{
     font-size:map-get($estilos,tFuente);
 
 }
+
+@mixin generarflex($direction , $eje-principal , $eje-secundario){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
