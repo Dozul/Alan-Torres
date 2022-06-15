@@ -1,5 +1,5 @@
 .header {
-    background-color: $color-primario;
+    background-color: #000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,45 +8,51 @@
     }
 
     .nav {
-        display: flex;
-        /*background-color: blue;*/
-        padding: 1rem;
-        font-size: 25px;
-        justify-content: space-evenly;
+    display: flex;
+    /*background-color: blue;*/
+    padding: 1rem;
+    font-size: 25px;
+    justify-content: space-evenly;
+    
+    }
 
-        &__lista {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            /*gap: 50px;*/
-            }  
-        
-            &__item{
-                margin-left: 30px;
-                display: inline-block;
-                }
-        
-            &__enlace{
-            color:$color-secundario;
-            text-decoration: none;
-            font-family:'Arenq';
-            font-size: 25px; 
-            }
-        
-            &__lista{
-                font-size: 30px;
-            }
-        
+    .nav__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*gap: 50px;*/
+    }  
+
+    .nav__item{
+        margin-left: 30px;
+        display: inline-block;
         }
 
-        @font-face {
-            font-family:'Arenq';
-            src: url(../FUENTE/Arenq.otf);
-            }
-            .logotipo{
-                color: white;
-                font-family: 'Arenq';
-                justify-content: end;
-                font-size: 50px;
-                }        
+    .nav__enlace{
+    color:white;
+    text-decoration: none;
+    font-family:'Arenq';
+    font-size: 25px; 
+    font-weight: bold;
+    }
+
+    .nav__lista{
+        font-size: 30px;
+    }
+
+    .logotipo{
+        color: white;
+        font-family: 'Arenq';
+        justify-content: end;
+        font-size: 50px;
+        background-color: #000;
+        }
+
+    .logo__div{
+        background-color: black;
+    }
+
+    .jam-menu{
+        display: none;
+    }

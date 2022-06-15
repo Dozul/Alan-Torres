@@ -10,15 +10,21 @@
         margin-right:10px;
     }
 
-    .header{ 
+    .header{
+         
         background-color: red;
         flex-direction: column;
         padding: 1rem;
         
 }
-.nav{background-color: black;
+.nav{
+    display:none;
+    background-color: black;
     flex-direction: column;
+}
 
+.jam-menu{
+    display:block;
 }
     
 }
@@ -173,7 +179,3 @@
     }
 
     }
-
-
-
-

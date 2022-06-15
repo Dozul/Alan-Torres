@@ -1,14 +1,49 @@
-.main__top{
-    background-image: url(../IMAGENES/labanda.png);
+body{
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     }
 
-    .clase__main{
-        width:100%;
-        height: auto;
-        background-color: green;
-        background-image: url(../IMAGENES/instrumentos-de-la-banda-de-rock-18172472.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
+    .seccion__cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+    }
+
+    .seccion__cards .card {
+      max-width: 350px;
+      background-color: #e6fff7;
+      border-radius: 0.3rem;
+      border:1px solid black;
+      text-align: center;
+      margin: 1rem;
+      
+      transition: transform 0.5s;
+      cursor: pointer;
+    }
+    
+    .seccion__cards .card:hover {
+      transform: scale(1.1);
+    }
+
+    .card-text {
+    font-size: 1rem;
+    }
+
+    .card-body{
+      background-color: black;
+      border-radius: 0rem;
+    }
+
+    .productos__titulo h1{
+      font-size: 3rem;
+      text-align: center;
+      padding:2rem;
+      color:black;
+      font-weight: bold;
+    }

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,IAAI;EACtB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,IAAI;CAEZ",
-    "sources": [
-        "../parciales/header.scss"
-    ],
-    "names": [],
-    "file": "header.css"
-}

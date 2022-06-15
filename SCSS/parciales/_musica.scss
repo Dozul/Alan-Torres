@@ -1,39 +1,66 @@
-.video-container{
-    display:flex;
-    justify-content:center;
-    flex-wrap: wrap;
-}
-
-.video-container .video{
-    height: 15rem;
-    width: 25rem;
-    margin: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
-    overflow: hidden;
-    border-radius: 1rem;
-}
-
-.video-container .video video{
-    height:100%;
-    width: 100%;
-    object-fit: cover;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.video-container .video video:hover{
-    transition: .2s linear;
-    transform: scale(1.3rem);
-}
-
-.video-container .video .active{
-    position:fixed;
-    top:50; left:50%;
-    transform: translate(-50%,-50%);
+.clase__main{
+    width:100%;
     height: auto;
-    width: 80%;
-    box-shadow: 0 0 0 100vh rgba(0,0,0,.5)
-    
+    background-color: green;
+    background-image: url(../IMAGENES/instrumentos-de-la-banda-de-rock-18172472.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
-}
+    .container .heading{
+        font-size: 3rem;
+        
+        text-transform: capitalize;
+        color:var(purple);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: .2rem;
+        text-align: center;
+        text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+       
+    }
+    
+    .video-container{
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        
+    }
+    
+    .video-container .video{
+        height: 15rem;
+        width: 25rem;
+        margin: 2rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+    
+    .video-container .video video{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .video-container .video video:hover{
+        transition: none;
+        transform: translate(-50%,-50%) scale(1);
+    }
+    
+    .video-container .video .active{
+        position:fixed;
+        top:50; left:50%;
+        transform: translate(-50%,-50%);
+        height: auto;
+        width: 80%;
+        box-shadow: 0 0 0 100vh rgba(0,0,0,.5)
+        
+    
+    }
+    .video{
+        background-color: white;
+    }
+
+    
