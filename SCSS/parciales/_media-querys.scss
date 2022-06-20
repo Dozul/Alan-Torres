@@ -1,5 +1,7 @@
 @media screen and (max-width: 1023px){
-        
+    .seccion1{
+        display:none;
+    }
     section.seccion1{
         text-align: center;
         margin-right:10px;
@@ -11,8 +13,8 @@
     }
 
     .header{
-         
-        background-color: red;
+        
+        background-color: black;
         flex-direction: column;
         padding: 1rem;
         
@@ -26,6 +28,40 @@
 .jam-menu{
     display:block;
 }
+
+    .waynestock__opacidad h1{
+    font-size: 4rem;
+    }
+
+    #lateral{
+        display:block;
+        background-color: rgba(0,0,0,0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:-100%;
+        z-index: 100;
+        transition: left 2s;
+    }
+
+    #lateral:target{
+        left: 0;
+    }
+    
+    .nav__item--close{
+        display:block;
+    }
+
+    .nav__lista{
+        text-align: center;
+        padding: 1px;
+        height: 100%;
+        justify-content: center;
+        gap:1rem;
+        font-size: 15px;
+        flex-direction: column;
+    }
     
 }
 
@@ -45,14 +81,27 @@
         }
 
         .header{ 
-            background-color: red;}
+            background-color: black;
+            
+            
+        }
+        .header__open{
+            display:none;
+            
+        }
     .nav{background-color: black;
-        display: flex;
+        display: none;
         flex-direction: column;
         padding: 2px;
     }
-    .nav__lista{text-align: center;
+    .nav__lista{
+        text-align: center;
         padding: 1px;
+        height: 100%;
+        justify-content: center;
+        gap:1rem;
+        font-size: 15px;
+        flex-direction: column;
     }
     .nav__enlace{
         font-size: 10px;
@@ -178,4 +227,39 @@
         text-align:center;
     }
 
+    .waynestock__opacidad h1{
+        font-size: 2.5rem;
+    }
+
+    .nosotros h2{
+        font-size: 2rem;
+    }
+
+    .container .heading{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .productos__titulo h1{
+        font-size: 1.5rem;
+    }
+    #lateral{
+        display:block;
+        background-color: rgba(0,0,0,0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:-100%;
+        z-index: 100;
+        transition: left 2s;
+    }
+
+    #lateral:target{
+        left: 0;
+    }
+    
+    .nav__item--close{
+        display:block;
+    }
     }
